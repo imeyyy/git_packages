@@ -1,0 +1,49 @@
+{
+  "arch": "x86_64",
+  "build": "8",
+  "build_number": 8,
+  "channel": "https://repo.continuum.io/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/home/itaim/anaconda3/pkgs/intel-openmp-2018.0.0-8",
+  "files": [
+    "lib/libiomp5.so",
+    "lib/libiompstubs5.so"
+  ],
+  "fn": "intel-openmp-2018.0.0-8.tar.bz2",
+  "license": "proprietary - Intel",
+  "license_family": "Proprietary",
+  "link": {
+    "source": "/home/itaim/anaconda3/pkgs/intel-openmp-2018.0.0-8",
+    "type": 1
+  },
+  "md5": "d6c7f47504ffa7547db227c1ec2c3be9",
+  "name": "intel-openmp",
+  "package_tarball_full_path": "/home/itaim/anaconda3/pkgs/intel-openmp-2018.0.0-8.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libiomp5.so",
+        "path_type": "hardlink",
+        "sha256": "16a72f3c0088294b85bdfc495cc3842a5ee465ec63aee0fb8f2652d169148cfd",
+        "sha256_in_prefix": "16a72f3c0088294b85bdfc495cc3842a5ee465ec63aee0fb8f2652d169148cfd",
+        "size_in_bytes": 1842723
+      },
+      {
+        "_path": "lib/libiompstubs5.so",
+        "path_type": "hardlink",
+        "sha256": "9a51d2e5087d934456b4802774be57677ccbb296483e57eef4f097771ed7f140",
+        "sha256_in_prefix": "9a51d2e5087d934456b4802774be57677ccbb296483e57eef4f097771ed7f140",
+        "size_in_bytes": 100423
+      }
+    ],
+    "paths_version": 1
+  },
+  "platform": "linux",
+  "requested_spec": "None",
+  "size": 634758,
+  "subdir": "linux-64",
+  "timestamp": 1521735596719,
+  "url": "https://repo.continuum.io/pkgs/main/linux-64/intel-openmp-2018.0.0-8.tar.bz2",
+  "version": "2018.0.0"
+}

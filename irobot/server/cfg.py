@@ -1,0 +1,1 @@
+cfg = {"is_ros_available": True}

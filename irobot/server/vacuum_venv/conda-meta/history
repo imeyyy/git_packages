@@ -1,0 +1,32 @@
+==> 2018-05-08 19:22:14 <==
+# cmd: /home/itaim/anaconda3/bin/conda-env create -f environment.yml --prefix ./vacuum_venv
++defaults::ca-certificates-2018.03.07-0
++defaults::certifi-2018.4.16-py36_0
++defaults::click-6.7-py36h5253387_0
++defaults::flask-0.12.2-py36hb24657c_0
++defaults::intel-openmp-2018.0.0-8
++defaults::itsdangerous-0.24-py36h93cc618_1
++defaults::jinja2-2.10-py36ha16c418_0
++defaults::libedit-3.1-heed3624_0
++defaults::libffi-3.2.1-hd88cf55_4
++defaults::libgcc-ng-7.2.0-hdf63c60_3
++defaults::libgfortran-ng-7.2.0-hdf63c60_3
++defaults::libstdcxx-ng-7.2.0-hdf63c60_3
++defaults::markupsafe-1.0-py36hd9260cd_1
++defaults::mkl-2018.0.2-1
++defaults::mkl_fft-1.0.1-py36h3010b51_0
++defaults::mkl_random-1.0.1-py36h629b387_0
++defaults::ncurses-6.0-h9df7e31_2
++defaults::numpy-1.14.2-py36hdbf6ddf_1
++defaults::openssl-1.0.2o-h20670df_0
++defaults::pip-10.0.1-py36_0
++defaults::python-3.6.5-hc3d631a_2
++defaults::readline-7.0-ha6073c6_4
++defaults::setuptools-39.1.0-py36_0
++defaults::sqlite-3.23.1-he433501_0
++defaults::tk-8.6.7-hc745277_3
++defaults::werkzeug-0.14.1-py36_0
++defaults::wheel-0.31.0-py36_0
++defaults::xz-5.2.3-h5e939de_4
++defaults::zlib-1.2.11-ha838bed_2
+# update specs: ['flask', 'numpy']

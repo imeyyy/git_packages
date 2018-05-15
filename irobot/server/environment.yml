@@ -1,0 +1,4 @@
+name: vacuum_venv
+dependencies:
+  - flask
+  - numpy
