@@ -52,6 +52,7 @@ add_message_files(
   FILES
   cmd_move.msg
   cmd_rotate.msg
+  cmd_demo.msg
 )
 
 ## Generate services in the 'srv' folder

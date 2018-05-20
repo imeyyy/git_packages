@@ -7,6 +7,7 @@
 #include <std_msgs/String.h>
 #include <irobot/cmd_move.h>
 #include <irobot/cmd_rotate.h>
+#include <irobot/cmd_demo.h>
 #include <SoftwareSerial.h>
 
  //* RX is digital pin 10 (connect to TX of other device - iRobot DB25 pin 2)
@@ -45,11 +46,22 @@ void rotateCmdCb(const irobot::cmd_rotate& rotate_cmd){
   }
 }
 
+void demoCmdCb(const irobot::cmd_demo& demo_cmd){
+  String robot_demo_cmd = demo_cmd.cmd_demo_str;
+  if (robot_demo_cmd == "demo") {
+    demoRobot((byte)demo_cmd.demo_num);
+  }
+}
+
 ros::Subscriber<irobot::cmd_rotate> sub_rotate("robot_cmd_rotate", &rotateCmdCb);
 
 ros::Subscriber<irobot::cmd_move>   sub_move  ("robot_cmd_move",   &moveCmdCb);
 
+ros::Subscriber<irobot::cmd_demo>   sub_demo  ("robot_cmd_demo",   &demoCmdCb);
+
+
 void stopRobot() {
+  //demoRobot((byte)255);
   //Serial sequence: [137] [Velocity high byte] [Velocity low byte] [Radius high byte] [Radius low byte]
   softSerial.write(137);       // Opcode number for DRIVE
   // Velocity (-500 – 500 mm/s)
@@ -102,11 +114,17 @@ void rotateRobot(const byte velocity_msb, const byte velocity_lsb,
   stopRobot();
 }
 
+void demoRobot(const byte demo_num) {
+  softSerial.write(136);
+  softSerial.write((byte)demo_num);
+}
+
 void setup()
 { 
   nh.initNode();
   nh.subscribe(sub_rotate);
   nh.subscribe(sub_move);
+  nh.subscribe(sub_demo);
   
   delay(2000); // NEEDED!!!! To let the robot initialize 
   
